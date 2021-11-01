@@ -1,0 +1,223 @@
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+body{
+    font-family: 'Karla', sans-serif;}
+
+header{
+    width: 1350px;
+    height: 90px;
+    border-bottom:  2px double rgba(0, 0, 0, 0.082) ;}
+
+#cont_logo img{
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 5px;}
+
+#botonera_ppal{
+    width: 60%;
+    height: 90px;
+    float: right;}
+
+#botonera_ppal ul{
+        height: 50px;
+        list-style: none;  
+        margin-top: 20px; }
+
+#botonera_ppal ul li{
+        border-right: 15px solid black;
+        display: inline;
+        font-size: 18px;
+        font-weight: bold;    }
+
+#botonera_ppal ul li a{
+        border: 2px solid black;        
+        color: black;
+        padding: 10px 40px;
+        text-decoration: none;
+        display: inline-block;}
+ 
+#botonera_ppal ul li a:hover{
+        background-color: rgb(216, 116, 241);}
+
+
+#cuerpo2{
+    height: auto;        
+    max-width: 1300px;
+    width: 90%;
+    margin: 5px auto 30px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 510px 130px 600px 130px 600px;
+
+    grid-template-areas: "btn1  text_yoga  info1"
+                        "btn2     btn2     btn2"
+                       "info2     info2   text_compa"
+                        "btn3     btn3     btn3"
+                        "text_para text_para info3" ;     }
+/* fila 1 */
+#btn1{  width: 210px;
+        height: 120px;
+        font-size: 22px;
+        color: white;
+        font-weight: bold;
+        background:linear-gradient(to bottom, #40724b, #38ff06);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: btn1;
+            /* animacion */
+        animation-name: boton1;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards ;  }     
+
+@keyframes boton1{
+            0% {  transform: translateY(10px);}
+            100%{ transform: translateY(390px);}          }
+
+#info1{
+        background-image: url("../img/emprendimientos/yoga.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 2px solid black;
+        grid-area: info1; }
+
+#text_yoga{
+        grid-area: text_yoga;  }
+
+#text_yoga p{
+            text-align: justify;
+            font-size: 24px;
+            margin: 20px 0 70px;
+            border-bottom: 2px solid rgba(114, 113, 113, 0.507);  }
+
+/* fila 2 */
+#btn2{
+        width: 210px;
+        height: 120px;
+        font-size: 22px;
+        color: white;
+        font-weight: bold;
+        background:linear-gradient(to right, #40724b, #38ff06);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: btn2;
+            /* animacion */
+        animation-name: boton2;
+        animation-duration: 4s;
+        animation-iteration-count: 5;
+        animation-delay: 15s; 
+        animation-direction: alternate;
+        animation-fill-mode: forwards ;}     
+
+@keyframes boton2{
+            0%{ transform:translateX(0px); }
+            100%{ transform:translateX(1000px);}         }
+
+/* fila 3 */
+#info2{
+        background-image: url("../img/emprendimientos/lacompañera.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 2px solid black; 
+        grid-area: info2;  }
+
+#text_compa{
+        grid-area: text_compa;  }
+
+#text_compa p{
+            text-align: justify;
+            font-size: 24px;
+            margin: 0 0 100px;
+            border-bottom: 2px solid rgba(114, 113, 113, 0.507);  }
+
+/* fila 4 */
+#btn3{
+        width: 210px;
+        height: 120px;
+        font-size: 22px;
+        color: white;
+        font-weight: bold;
+        background:linear-gradient(to left, #40724b, #38ff06);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: btn3;
+            /* animacion */
+        animation-name: boton3;
+        animation-duration: 4s;
+        animation-iteration-count: 5;
+        animation-delay: 35s; 
+        animation-direction: alternate;
+        animation-fill-mode: backwards ;}     
+
+@keyframes boton3{
+            0%{ right: 0; transform:translateX(1000px);}
+            100%{ transform:translateX(0px); }            }
+
+#info3{
+        background-image: url("../img/emprendimientos/paraque.png");
+        background-repeat: no-repeat;
+        background-position: center; border:2px solid black;
+        grid-area: info3; }
+
+#text_para{
+        grid-area: text_para; }
+
+#text_para p{
+            text-align: justify;
+            font-size: 24px;
+            margin: 0 0 130px;
+            border-bottom: 2px solid rgba(114, 113, 113, 0.507);  }
+
+/* footer */
+footer{
+    height: 180px;
+    width: 100%;
+    color: black;
+        border-top: 2px solid rgba(0, 0, 0, 0.137);}
+#footer{
+        position: relative;
+        background-color: white;
+        height: 80%;
+        text-align: center;}
+#t-red{
+            position: absolute;
+            top:20px;
+            left: 20%;
+            font-size: 25px;
+            font-weight: 600;}
+
+#face{
+            position: absolute;
+            top: 40%;
+            left: 20%;
+            color: rgb(65, 53, 180);
+            font-size: 50px;}
+#ig{
+            position: absolute;
+            top: 40%;
+            left: 30%;
+            color: rgb(177, 40, 196);
+            font-size: 50px;}
+#contact{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            font-size: 25px;
+            font-weight: 600;}
+
+#derechos{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    border-top:  1px double rgba(0, 0, 0, 0.459) ;}
+ 

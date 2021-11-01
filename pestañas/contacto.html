@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+   
+    <!-- linkeo bootstrap css -->
+   <link rel="stylesheet" href="/ext/css/bootstrap.min.css">
+   
+    <link rel="stylesheet" href="../css/contacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+    
+    <header>
+        <div id="cont_logo">
+            <img src="../img/logo-sinfondo.png" alt="logo">
+        </div>
+
+        <nav id="botonera_ppal">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="emprendimientos.html"> Emprendimientos </a></li>
+                <li><a href="prensa.html"> Prensa </a></li>
+                <li><a href="contacto.html"> Contacto </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <p id="parrafo">Te consideras una persona trans-feminista, tenés un emprendimiento y querés formar parte de nuestro espacio? Registrate! </p>
+    
+    <form id="formulario" action="procesar.php" method="">
+        <div class="container">
+            <div class="mb-3 mt-5">
+                <label for="usuario" class="form-label">Usuario</label>
+                <input type="text" id="usuario" class="form-control" >
+                <p></p>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Nunca vamos a compartir su e-mail con nadie.</div>
+                <p></p>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+                <p></p>
+            </div>
+
+            <div class="mb-3">
+                <label for="confirmar" class="form-label">Confirmar Contraseña</label>
+                <input type="password" class="form-control" id="confirmar">
+                <p></p>
+            </div>
+              
+            <div class="mb-5 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Acepto los términos y condiciones</label>
+                <p></p>
+            </div>
+
+            <button type="submit" class="btn btn-success mb-5" id="submit">REGISTRARSE</button>
+            
+        </div>
+    </form>
+
+    <script src="/ext/js/bootstrap.min.js"></script>
+    <script src="/ext/validacion.js" ></script>
+</body>
+</html>

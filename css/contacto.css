@@ -1,0 +1,62 @@
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+body{
+    font-family: 'Karla', sans-serif;}
+
+header{
+    width: 1350px;
+    height: 90px;
+    border-bottom:  2px double rgba(0, 0, 0, 0.082) ;}
+
+#cont_logo img{
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 5px;}
+
+#botonera_ppal{
+    width: 60%;
+    height: 90px;
+    float: right;}
+
+#botonera_ppal ul{
+        height: 50px;
+        list-style: none;  
+        margin-top: 20px; }
+
+#botonera_ppal ul li{
+        border-right: 15px solid black;
+        display: inline;
+        font-size: 18px;
+        font-weight: bold;    }
+
+#botonera_ppal ul li a{
+        border: 2px solid black;        
+        color: black;
+        padding: 10px 40px;
+        text-decoration: none;
+        display: inline-block;}
+ 
+#botonera_ppal ul li a:hover{
+        background-color: rgb(216, 116, 241);}
+
+
+#parrafo{
+text-align: center;
+font-size: 20px;
+font-weight: bold;
+margin: 80px 20px 80px;      }
+
+.container{
+    border: 2px solid rgb(13, 223, 76); }
+
+#usuario, #exampleInputEmail1,
+#exampleInputPassword1, #confirmar{
+    background-color: rgba(206, 206, 206, 0.63); }
+
+label{
+    font-weight: bold;
+    }
+

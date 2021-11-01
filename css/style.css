@@ -1,0 +1,501 @@
+* {/* selector universal : aplica a toda la pagina HTML*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+body{
+    font-family: 'Karla', sans-serif;}
+
+header{
+    width: 100%;
+    height: 90px;
+    border-bottom:  2px double rgba(0, 0, 0, 0.082) ;}
+
+#cont_logo img{
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 5px;}
+
+#botonera_ppal{/* es el contenedor de la botonera a lo largo del header */
+    max-width: 800px;
+    width: 80%;
+    float: right}
+
+#botonera_ppal ul{/* es lo que contiene a la lista,es la botonera  */
+        height: 50px;
+        list-style: none; 
+        margin: 20px auto; }
+
+#botonera_ppal ul li{   /* cada uno de los elementos de la lista */
+        border-right: 15px solid black;
+        display: inline;
+        font-size: 18px;
+        font-weight: bold;    }
+
+#botonera_ppal ul li a{/* los link y sus rellenos */
+        border: 2px solid black;
+        color: black;
+        padding: 10px 40px;
+        text-decoration: none;
+        display: inline-block;}
+ 
+ #botonera_ppal ul li a:hover{
+        background-color: rgba(25, 216, 56, 0.664);}  
+
+/* section: primera imagen */
+#cuerpo{
+    width: 1350px;
+    height: 2400px;}
+
+#fila1{
+        width: 1348px;
+        height: 500px;
+        position: relative;
+        margin-top: 10px; 
+        left:1px;    }
+
+#cont_banner{
+            height: 500px;
+            width: 60%;
+            float: left;
+            position: absolute;
+            left: 10px;        }
+
+#titulo_b{
+                font-size: 70px;
+                margin: 60px 0 20px 100px ;
+                text-align: start;}
+
+#texto_b{
+                font-size: 40px;
+                margin: 60px 0 40px 100px ;
+                text-align: start;}
+
+#cont_img1{
+            width:400px;
+            height: 400px;
+            float: right;
+            position: absolute;
+            top:60px;
+            right: 80px;}
+
+#img1{
+                width: 100%;
+                height: 100%;
+                float: right;
+                padding: 0;
+                box-sizing: border-box;}
+
+/* fila 2 */
+#fila2{
+        width: 1348px;
+        height: 600px;
+        margin-top: 20px;}
+
+#cont_mama{        
+            background-color: gold;
+            width: 1346px;
+            height: 330px;
+            position: relative;
+            left: 1px;
+            border: 2px solid rgb(245, 221, 161);}
+
+#title_mama{
+                font-size: 40px;
+                position: absolute;
+                top: 30px;
+                margin-left: 600px;}
+
+#maiz{
+                margin: 60px 0 0 60px;
+                width: 150px;
+                position: absolute;}
+
+#mama_sara{
+                font-size: 30px;
+                margin: 110px 110px 0 140px;
+                text-align: end;
+                position: absolute;}
+
+#hacemos{
+            width: 1346px;
+            height: 260px;
+            left: 1px;
+            position: relative;}
+
+#texto_h{
+                font-size: 27px;
+                text-align: start;
+                margin: 40px 140px 0 110px;
+                font-weight: bold;
+                position:absolute;}
+
+/* fila 3 */
+#fila3{
+        height: 590px;
+        max-width: 1000px;
+        width: 90%;
+	    margin: 5px auto 30px;
+
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+	    grid-template-rows: repeat(3, 1fr);
+
+        grid-template-areas: "title_quien title_quien title_quien title_quien"
+                            "radius1 text_quien1 radius2 text_quien2"
+                            "radius3 text_quien3 radius4 text_quien4";}
+
+
+#title_quien{
+            height: 100px;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.267);
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;/* centra el texto en horizontal y vertical */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            grid-area: title_quien;}
+
+#radius1, #radius2, #radius3, #radius4{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-left: 50px;}
+
+#radius1{ grid-area: radius1;}
+#radius2{ grid-area: radius2;}
+#radius3{ grid-area: radius3;}
+#radius4{ grid-area: radius4;}
+
+#text_quien1, #text_quien2, #text_quien3, #text_quien4{
+    font-size: 19px;
+    width: 200px;
+    text-align: start;}
+
+#text_quien1{ grid-area: text_quien1;}
+#text_quien2{ grid-area: text_quien2;}
+#text_quien3{ grid-area: text_quien3;}
+#text_quien4{ grid-area: text_quien4;}
+
+
+/* banner */
+#banner{
+        background-image: url("../img/estadisticas.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1348px;
+        height: 600px;
+        position: relative;
+        top:10px;        }
+
+#cont_frase{
+            position: absolute;
+            height: 150px; 
+            top: 30px;}
+
+#frase{
+                font-style: italic;
+                font-size: 35px;
+                font-variant: small-caps;
+                font-weight: bold;
+                color: white;
+                margin: 10px 100px 0;
+                text-align: center;}
+
+#numeros1{
+            width:200px;
+            height: 300px;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            float: left;}
+
+#numeros2{
+            width:200px;
+            height: 300px;
+            position: absolute;
+            top: 200px;
+            left: 570px;
+            float: right;}
+
+#numeros3{
+            width:200px;
+            height: 300px;
+            position: absolute;
+            top: 200px;
+            left: 950px;
+            float: right;}
+
+.numero{
+                font-size: 100px;
+                font-weight: 900;
+                color: white;}
+
+.est_text{
+                font-size: 27px;
+                font-variant: small-caps;
+                font-weight: bold;
+                color: white;}
+
+/* footer */
+footer{
+    height: 180px;
+    width: 100%;
+    color: black;
+        border-top: 2px solid rgba(0, 0, 0, 0.137);}
+#footer{
+        position: relative;
+        background-color: white;
+        height: 80%;
+        text-align: center;}
+#t-red{
+            position: absolute;
+            top:20px;
+            left: 20%;
+            font-size: 25px;
+            font-weight: 600;}
+
+#face{
+            position: absolute;
+            top: 40%;
+            left: 20%;
+            color: rgb(65, 53, 180);
+            font-size: 50px;}
+#ig{
+            position: absolute;
+            top: 40%;
+            left: 30%;
+            color: rgb(177, 40, 196);
+            font-size: 50px;}
+#contact{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            font-size: 25px;
+            font-weight: 600;}
+
+#derechos{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    border-top:  1px double rgba(0, 0, 0, 0.459) ;}
+
+/* responsive para celular*/
+@media screen and (max-width: 410px) {
+    header{
+        width: 400px;
+        height: 100px;
+        border: none; }
+    
+    #cont_logo img{
+        width: 40px;
+        height: auto;  
+        float: right;
+        margin-top: 10px;}
+    
+    #botonera_ppal{
+        width: 250px;
+        float: none;       }
+
+    #botonera_ppal ul{
+        margin: 0 auto;   }
+            
+    #botonera_ppal ul li{
+        border-right: 0;     }
+    
+    #botonera_ppal ul li a{
+        padding: 0; 
+        display: block;     }
+
+    #botonera_ppal ul li a:hover{
+        background-color: rgba(25, 216, 56, 0.664);}  
+       /* fila 1 */
+    #cuerpo{
+        width: 400px;
+        height: auto;}
+            
+    #fila1{
+        width: 398px;
+        height: 290px;
+        margin-top: auto; 
+        left:1px;    }
+            
+    #cont_banner{
+        height: 200px;
+        width: 60%;
+        float: none;
+        left: 10px;        }
+            
+    #titulo_b{
+        font-size: 20px;
+        margin: 30px 0 20px auto ;
+        text-align: center;}
+            
+    #texto_b{
+        font-size: 20px;
+        margin: 30px auto ;
+        text-align: center;}
+            
+    #cont_img1{
+        width:100px;
+        height: auto;
+        left: 300px;
+        float: none;
+        }
+            
+    #img1{
+        width: 100%;
+        height: 100%;
+        float: none;
+        padding: 0;     }
+    
+/* fila 2 */
+#fila2{
+    width: 400px;
+    height: 300px;  
+    margin-bottom:30px; }
+
+#cont_mama{        
+    width: 100%;
+    height: 200px;    }
+
+#title_mama{
+    font-size: 15px;
+    top: 30px;
+    margin-left: 100px;  }
+
+#maiz{
+    margin: 0;
+    width: 80px;  }
+
+#mama_sara{
+    font-size: 15px;
+    margin: 50px 10px 0 0;  }
+
+#hacemos{
+    width: 400px;
+    height: 260px; }
+
+#texto_h{
+    font-size: 15px;
+    margin: 10px 0 0 10px;   }
+
+/* fila 3 */
+    #fila3{
+        height: auto;
+        max-width: 400px;
+        width: 99%;
+	    margin: 60px auto 30px;
+        gap: 10px;
+        display: grid;
+         
+         grid-template-columns: repeat(2, 1fr);
+	    grid-template-rows: repeat(5, 1fr);
+
+        grid-template-areas: "title_quien title_quien "
+                            "radius1 text_quien1"
+                            "radius2 text_quien2"
+                            "radius3 text_quien3 "
+                            "radius4 text_quien4";     }
+
+#title_quien{
+            height: 30px;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.267);
+            font-size: 25px;
+            
+            grid-area: title_quien;}
+
+#radius1, #radius2, #radius3, #radius4{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-left: auto;}
+
+#radius1{ grid-area: radius1;}
+#radius2{ grid-area: radius2;}
+#radius3{ grid-area: radius3;}
+#radius4{ grid-area: radius4;}
+
+#text_quien1, #text_quien2, #text_quien3, #text_quien4{
+    font-size: 15px;
+    width: 300px;
+    text-align: start;}
+
+#text_quien1{ grid-area: text_quien1;}
+#text_quien2{ grid-area: text_quien2;}
+#text_quien3{ grid-area: text_quien3;}
+#text_quien4{ grid-area: text_quien4;}
+
+
+/* banner */
+#banner{
+    width: 400px;
+    height: 500px;
+    top:10px;   }
+
+#cont_frase{
+    height: auto; 
+    top: 10px;}
+
+#frase{
+    font-size: 15px;
+    margin: 0;   }
+
+#numeros1{
+    width: 10px;
+    height: 10px;
+    top: 100px;
+    left: 10px; }
+
+#numeros2{
+    width:10px;
+    height:10px;
+    top: 100px;
+    left: 180px; }
+
+#numeros3{
+    width:10px;
+    height: 10px;
+    top: 100px;
+    left: 300px;}
+
+.numero{
+        font-size: 25px;}
+
+.est_text{
+        font-size: 20px;   }
+/* footer */
+footer{
+    height: 100px;
+    width: 400px; }
+    
+#footer{
+    height: 80%;}
+#t-red{
+     top:10px;
+    left: 20%;
+    font-size:17px;}
+
+#face{
+    top: 40%;
+    left: 20%;
+    font-size: 30px;}
+#ig{
+    top: 40%;
+    left: 30%;
+    font-size: 30px;}
+#contact{
+        top: 40%;
+        left: 50%;
+        font-size: 15px;}
+
+#derechos{
+    font-size: 10px;
+    border-top:  1px double rgba(0, 0, 0, 0.459) ;}
+
+}
+
